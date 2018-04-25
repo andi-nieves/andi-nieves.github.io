@@ -9,20 +9,35 @@
     <meta name="author" content="">
 
     <title>Andy Nieves</title>
-
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
     <!-- Bootstrap Core CSS -->
-    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <!-- <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet"> -->
 
     <!-- Custom Fonts -->
-    <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <!-- <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700,300italic,400italic,700italic" rel="stylesheet" type="text/css">
+    <link href="vendor/simple-line-icons/css/simple-line-icons.css" rel="stylesheet"> -->
     <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700,300italic,400italic,700italic" rel="stylesheet" type="text/css">
     <link href="vendor/simple-line-icons/css/simple-line-icons.css" rel="stylesheet">
-
     <!-- Custom CSS -->
     <link href="css/stylish-portfolio.min.css" rel="stylesheet">
+    <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
     <style>
       #sidebar-wrapper {
         background-color: #ECBA3F;
+      }
+      img.mypic {
+        max-height: 100vh;
+        /* width: 300px; */
+        margin-top: -128px;
+
+      }
+      img.mypic-circle {
+        max-height: 200px;
+        margin: auto;
       }
     </style>
     <meta property="og:url"                content="https://andi-nieves.github.io/" />
@@ -63,12 +78,25 @@
 
     <!-- Header -->
     <header class="masthead d-flex">
-      <div class="container text-center my-auto">
-        <h1 class="mb-1">Hi, I'm Andy Nieves</h1>
-        <p class="mb-5">
-          with 8 years of total experience in Web, Windows, Mobile Applications Development. Proven skills in project development & management, data analyzing, problem solving, implementing innovative technologies. I love being critically involved on the high levels of projects, which, I think will keep my mind sharp, active and engaged.
-        </p>
-        <a class="btn btn-primary btn-xl js-scroll-trigger" href="#about">Find Out More</a>
+      <div class="container my-auto">
+        <div class="row">
+          <div class="col-lg-6 text-center">
+            <img src="img/andi.png" class="mypic hidden-md-down" alt="Andy">
+            <img src="img/andi-cirle.png" class="mypic-circle hidden-lg-up" alt="Andy">
+          </div>
+          <div class="col text-center">
+            <h1 class="mb-1">Hi, I'm Andy Nieves</h1>
+            <p class="mb-5">
+              Computer Programmer with 8 years of total experience in Web, Windows, Mobile Applications Development. Proven skills in project development & management, data analyzing, problem solving, implementing innovative technologies. I love being critically involved on the high levels of projects, which, I think will keep my mind sharp, active and engaged.
+
+            </p>
+            <a class="btn btn-primary btn-xl js-scroll-trigger" href="#about">Find Out More <i class="fa fa-chevron-down"></i></a>
+          </div>
+        </div>
+        <!-- <center>
+
+        </center> -->
+
       </div>
       <div class="overlay"></div>
     </header>
