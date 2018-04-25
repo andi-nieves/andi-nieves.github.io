@@ -13,11 +13,20 @@
   $('a.js-scroll-trigger[href*="#"]:not([href="#"])').click(function() {
     if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') && location.hostname == this.hostname) {
       var target = $(this.hash);
+      var hash = this.hash;
       target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
       if (target.length) {
         $('html, body').animate({
           scrollTop: target.offset().top
-        }, 1000, "easeInOutExpo");
+        }, 1000, "easeInOutExpo",function(){
+          if (hash=='#about') {
+            $("#about .we").show();
+            $("#about .ed").show();
+            $("#about .we").animateCss("fadeInLeft");
+            $("#about .ed").animateCss("fadeInRight");
+          }
+        });
+
         return false;
       }
     }

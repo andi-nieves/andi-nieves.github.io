@@ -25,10 +25,12 @@
     <!-- Custom CSS -->
     <link href="css/stylish-portfolio.min.css" rel="stylesheet">
     <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="css/animate.css" rel="stylesheet">
     <link rel="shortcut icon" href="img/andi-cirle.png">
     <style>
       #sidebar-wrapper {
-        background-color: #ECBA3F;
+        /* background-image: url(img/bg-masthead.jpg); */
+        background-color: #333;
       }
       img.mypic {
         max-height: 100vh;
@@ -113,7 +115,7 @@
             <img src="img/andi.png" class="mypic hidden-md-down" alt="Andy">
             <img src="img/andi-cirle.png" class="mypic-circle hidden-lg-up" alt="Andy">
           </div>
-          <div class="col text-center">
+          <div class="col text-center imandy" style="">
             <h1 class="mb-1">Hi, I'm Andy Nieves</h1>
             <p class="mb-5">
               <b>I love being critically involved on the high levels of projects, which, I think will keep my mind sharp, active and engaged.</b>
@@ -164,8 +166,8 @@
         <div class="container text-center">
 
           <div class="row text-left">
-            <div class="col-lg-6 mx-auto">
-              <div class="about-me-col">
+            <div class="col-lg-6 mx-auto ">
+              <div class="about-me-col we">
                 <h2>WORK EXPERIENCE</h2>
 
                 <dl class="row">
@@ -191,7 +193,7 @@
               <!-- <a class="btn btn-dark btn-xl js-scroll-trigger" href="#services">What We Offer</a> -->
             </div>
             <div class="col-lg-6 mx-auto">
-              <div class="about-me-col">
+              <div class="about-me-col ed">
                 <h2>EDUCATION</h2>
                 <dl class="row">
                   <dt class="col-sm-3"><span>2013 - 2015</span></dt>
@@ -396,12 +398,79 @@
     <!-- Bootstrap core JavaScript -->
     <script src="vendor/jquery/jquery.min.js"></script>
     <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script type="text/javascript">
 
+    $.fn.extend({
+      animateCss: function(animationName, callback) {
+        var animationEnd = (function(el) {
+          var animations = {
+            animation: 'animationend',
+            OAnimation: 'oAnimationEnd',
+            MozAnimation: 'mozAnimationEnd',
+            WebkitAnimation: 'webkitAnimationEnd',
+          };
+
+          for (var t in animations) {
+            if (el.style[t] !== undefined) {
+              return animations[t];
+            }
+          }
+        })(document.createElement('div'));
+
+        this.addClass('animated ' + animationName).one(animationEnd, function() {
+          //$(this).removeClass('animated ' + animationName);
+
+          if (typeof callback === 'function') callback();
+        });
+
+        return this;
+      },
+    });
+
+      var element_position = $('#about').offset().top;
+      $("#about .we").hide();
+      $("#about .ed").hide();
+      $(window).on('scroll', function() {
+        var y_scroll_pos = window.pageYOffset;
+        var scroll_pos_test = element_position;
+
+        if(y_scroll_pos > scroll_pos_test) {
+            //do stuff
+
+            if(!$("#about .we").hasClass("animate")){
+              $("#about .we").show();
+              $("#about .ed").show();
+              $("#about .we").animateCss("fadeInLeft");
+              $("#about .ed").animateCss("fadeInRight");
+            }
+
+        }
+      });
+      $(document).on('ready',function(){
+        alert("hey");
+        $(".imandy").show();
+        $(".imandy").animateCss("animated fadeInRight");
+        var y_scroll_pos = window.pageYOffset;
+        var scroll_pos_test = element_position;
+
+        if(y_scroll_pos > scroll_pos_test) {
+            //do stuff
+
+            if(!$("#about .we").hasClass("animate")){
+              $("#about .we").show();
+              $("#about .ed").show();
+              $("#about .we").animateCss("fadeInLeft");
+              $("#about .ed").animateCss("fadeInRight");
+            }
+
+        }
+      });
+    </script>
     <!-- Plugin JavaScript -->
     <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
 
     <!-- Custom scripts for this template -->
-    <script src="js/stylish-portfolio.min.js"></script>
+    <script src="js/stylish-portfolio.js"></script>
 
   </body>
 
