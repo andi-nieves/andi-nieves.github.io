@@ -40,6 +40,34 @@
         max-height: 200px;
         margin: auto;
       }
+      .about-me{
+        /* background-image: url(img/building.jpg);
+        background-repeat: no-repeat;
+        background-size: cover; */
+      }
+      .about-me-col{
+        background-color: rgba(255,255,255,0.3);
+        /* margin: 20px; */
+        padding: 15px;
+        position: relative;
+      }
+      .about-me-col ul {
+        text-align: left;
+        font-size: 14px;
+        list-style: none;
+        padding: 0;
+      }
+      .about-me-col dl dt, .about-me-col dl dd{
+        font-weight: lighter;
+        font-size: 14px;
+      }
+      .bg-dark{
+        background-color: #333;
+        color: #fff;
+      }
+      .primary-color{
+        color: #ECBA3F;
+      }
     </style>
     <meta property="og:url"                content="https://andi-nieves.github.io/" />
     <meta property="og:type"               content="article" />
@@ -66,7 +94,7 @@
           <a class="js-scroll-trigger" href="#about">About</a>
         </li>
         <li class="sidebar-nav-item">
-          <a class="js-scroll-trigger" href="#services">Services</a>
+          <a class="js-scroll-trigger" href="#services">Skills</a>
         </li>
         <li class="sidebar-nav-item">
           <a class="js-scroll-trigger" href="#portfolio">Portfolio</a>
@@ -88,9 +116,25 @@
           <div class="col text-center">
             <h1 class="mb-1">Hi, I'm Andy Nieves</h1>
             <p class="mb-5">
-              <b>Computer Programmer</b> with 8 years of total experience in Web, Windows, Mobile Applications Development. Proven skills in project development & management, data analyzing, problem solving, implementing innovative technologies. I love being critically involved on the high levels of projects, which, I think will keep my mind sharp, active and engaged.
-
+              <b>I love being critically involved on the high levels of projects, which, I think will keep my mind sharp, active and engaged.</b>
             </p>
+            <ul class="list-inline mb-5">
+              <li class="list-inline-item">
+                <a class="social-link rounded-circle text-white mr-3" href="https://www.facebook.com/andi.sevein">
+                  <i class="icon-social-facebook"></i>
+                </a>
+              </li>
+              <li class="list-inline-item">
+                <a class="social-link rounded-circle text-white mr-3" href="https://twitter.com/andi_nieves15">
+                  <i class="icon-social-twitter"></i>
+                </a>
+              </li>
+              <li class="list-inline-item">
+                <a class="social-link rounded-circle text-white" href="https://github.com/andi-nieves">
+                  <i class="icon-social-github"></i>
+                </a>
+              </li>
+            </ul>
             <a class="btn btn-primary btn-xl js-scroll-trigger" href="#about">Find Out More <i class="fa fa-chevron-down"></i></a>
           </div>
         </div>
@@ -103,35 +147,94 @@
     </header>
 
     <section class="content-section bg-dark" id="about">
-      <div class="container text-center">
-        <div class="row">
-          <div class="col-lg-10 mx-auto">
-            <h2>Work Experience</h2>
-            <p class="lead mb-5">Coming soon!</p>
-            <!-- <a class="btn btn-dark btn-xl js-scroll-trigger" href="#services">What We Offer</a> -->
+      <div class="container">
+        <div class="row text-center">
+          <div class="col">
+            <div class="content-section-heading">
+              <h3 class="text-secondary mb-0"></h3>
+              <h2 class="mb-5">About Me</h2>
+              <p><b class="primary-color">Computer Programmer</b> with 9 years of total experience in Web, Windows, Mobile Applications Development. Proven skills in project development & management, data analyzing, problem solving, implementing innovative technologies. <br><br></p>
+            </div>
+          </div>
+      </div>
+
+
+      </div>
+      <div class="row about-me">
+        <div class="container text-center">
+
+          <div class="row text-left">
+            <div class="col-lg-6 mx-auto">
+              <div class="about-me-col">
+                <h2>WORK EXPERIENCE</h2>
+
+                <dl class="row">
+                  <dt class="col-sm-3"><span>Jul 2017 - Present</span></dt>
+                  <dd class="col-sm-9"><p><b class="primary-color">IT DIRECTOR / SENIOR PROGRAMMER</b><br>Mr. Geek Mobile Solutions Inc.<br>Unit 1703A, East Tower Tektite Building, Orgitas Center, Pasig City, 1605</p></dd>
+
+                  <dt class="col-sm-3"><span>Dec 2016 - Jul 2017</span></dt>
+                  <dd class="col-sm-9"><p><b class="primary-color">PROJECT TEAM LEADER / WEB DEVELOPER</b><br>de' Kronos Advertising<br>Madewa, Brunei Darussalam</p></dd>
+
+                  <dt class="col-sm-3"><span>Sep 2015 - Dec 2016</span></dt>
+                  <dd class="col-sm-9"><p><b class="primary-color">AIS COMPUTER PROGRAMMER</b><br>Xanatos Marine Ltd<br>Provincial Capitol Iba, Zambales 2201</p></dd>
+
+                  <dt class="col-sm-3"><span>June 2009 - Sep 2015</span></dt>
+                  <dd class="col-sm-9"><p><b class="primary-color">INSTRUCTOR I / SENIOR DEVELOPER</b><br>Ramon Magsaysay Technological University<br>Iba Main Campus, Zambales 2201</p></dd>
+
+                  <dt class="col-sm-3"><span>2008</span></dt>
+                  <dd class="col-sm-9"><p><b class="primary-color">FREELANCE PROGRAMMER</b></p></dd>
+
+                </dl>
+
+              </div>
+
+              <!-- <a class="btn btn-dark btn-xl js-scroll-trigger" href="#services">What We Offer</a> -->
+            </div>
+            <div class="col-lg-6 mx-auto">
+              <div class="about-me-col">
+                <h2>EDUCATION</h2>
+                <dl class="row">
+                  <dt class="col-sm-3"><span>2013 - 2015</span></dt>
+                  <dd class="col-sm-9"><p><b class="primary-color">MASTER OF SCIENCE IN COMPUTER SCIENCE</b><br>Ramon Magsaysay Technological University<br>Iba Main Campus Zambales</p></dd>
+
+                  <dt class="col-sm-3"><span>2013 - 2014</span></dt>
+                  <dd class="col-sm-9"><p><b class="primary-color">CERTIFICATE OF PROFESSIONAL EDUCATION</b><br>Ramon Magsaysay Technological University<br>Iba Main Campus Zambales</p></dd>
+
+                  <dt class="col-sm-3"><span>2005 - 2009</span></dt>
+                  <dd class="col-sm-9"><p><b class="primary-color">BACHELOR OF SCIENCE IN COMPUTER SCIENCE</b><br>* Best in Digital Arts<br>Ramon Magsaysay Technological University<br>Iba Main Campus Zambales</p></dd>
+
+                  <dt class="col-sm-3"><span>2001 - 2005</span></dt>
+                  <dd class="col-sm-9"><p><b class="primary-color">ELECTRONICS</b><br>Zambales National High School<br>Iba Zambales</p></dd>
+
+
+                </dl>
+
+              </div>
+            </div>
           </div>
         </div>
       </div>
+
     </section>
     <!-- About -->
-    <section class="content-section bg-light" id="about">
+    <!-- <section class="content-section bg-light" id="about">
       <div class="container text-center">
         <div class="row">
           <div class="col-lg-10 mx-auto">
             <h2>Education</h2>
             <p class="lead mb-5">Coming soon!</p>
-            <!-- <a class="btn btn-dark btn-xl js-scroll-trigger" href="#services">What We Offer</a> -->
+            <a class="btn btn-dark btn-xl js-scroll-trigger" href="#services">What We Offer</a>
           </div>
         </div>
       </div>
-    </section>
+    </section> -->
 
     <!-- Services -->
     <section class="content-section bg-primary text-white text-center" id="services">
       <div class="container">
         <div class="content-section-heading">
           <h3 class="text-secondary mb-0"></h3>
-          <h2 class="mb-5">Technologies</h2>
+          <h2 class="mb-5">Skills</h2>
         </div>
         <div class="row">
           <div class="col-lg-3 col-md-6 mb-5 mb-lg-0">
