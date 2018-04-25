@@ -365,3 +365,40 @@ a:hover, a:focus, a:active {
 .text-secondary {
   color: #ecb807 !important;
 }
+
+#sidebar-wrapper {
+  background-color: #333;
+}
+img.mypic {
+  max-height: 100vh;
+  /* width: 300px; */
+  margin-top: -128px;
+
+}
+img.mypic-circle {
+  max-height: 200px;
+  margin: auto;
+}
+.about-me-col{
+  background-color: rgba(255,255,255,0.3);
+  /* margin: 20px; */
+  padding: 15px;
+  position: relative;
+}
+.about-me-col ul {
+  text-align: left;
+  font-size: 14px;
+  list-style: none;
+  padding: 0;
+}
+.about-me-col dl dt, .about-me-col dl dd{
+  font-weight: lighter;
+  font-size: 14px;
+}
+.bg-dark{
+  background-color: #333;
+  color: #fff;
+}
+.primary-color{
+  color: #ECBA3F;
+}
