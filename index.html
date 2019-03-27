@@ -18,7 +18,9 @@
     <link href="vendor/simple-line-icons/css/simple-line-icons.css" rel="stylesheet">
     <!-- Custom CSS -->
     <link href="css/stylish-portfolio.css" rel="stylesheet">
-    <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css">
+
+    <!-- <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous"> -->
     <link href="css/animate.css" rel="stylesheet">
     <link rel="shortcut icon" href="img/andi-cirle.png">
     <style>
@@ -34,6 +36,22 @@
     <style media="screen">
       .contact input,.contact textarea,.contact button{
         margin-bottom: 10px;
+      }
+      .skill {
+        margin-bottom: 10px;
+        position: relative;
+      }
+      .skill .ico {
+        position: absolute;
+        font-size: 30px;
+        top: 10px;
+      }
+      .skill .description {
+        margin-left: 35px;
+      }
+      .skill .level{
+        float: right;
+        font-size: 12px;
       }
     </style>
   </head>
@@ -209,7 +227,24 @@
           <h3 class="text-secondary mb-0"></h3>
           <h2 class="mb-5 text-center">Skills</h2>
         </div>
+
         <h3 class="primary-color">TECHNOLOGIES</h3>
+        <div class="row">
+          <div class="col-md-4">
+              <div id="skills-set-col1">
+              </div>
+          </div>
+          <div class="col-md-4">
+              <div id="skills-set-col2">
+              </div>
+          </div>
+          <div class="col-md-4">
+              <div id="skills-set-col3">
+              </div>
+          </div>
+        </div>
+        
+
         <p>Ruby-on-Rails, ReactJS, React-Native, Redux, Flutter, IONIC, Object Oriented Programming, MVC Cycle, PHP, Mysql, Xcode, Objective-c,
           Android, iOS Application Development, Software Development, HTML5, CSS3, URL Rewriting, Javascript, AngularJS,
           jQuery, AJAX, JSON, Java, HTML Pipelining, Database Management, Database Analytics, Advanced Distributed
@@ -357,6 +392,37 @@
 
         }
       });
+
+    const skills = [
+                    {"name":"Javascript", "level":"Advance", "icon":"devicon-javascript-plain"},
+                    {"name":"React (JS / Native) Redux", "level":"Advance", "icon": "devicon-react-original"},
+                    {"name":"Amazon Web Services (AWS)", "level":"Advance", "icon":"devicon-amazonwebservices-plain-wordmark"},
+                    {"name":"Ruby-on-Rails", "level":"Advance", "icon":"devicon-rails-plain"},
+                    {"name":"Flutter", "level":"Advance", "icon":"devicon-google-plain"},
+                    {"name":"AngularJS", "level":"Advance", "icon":"devicon-angularjs-plain"},
+                  ]
+    function template(data){
+      const color = data.level === 'Advance' ? 'bg-success' : 'bg-warning';
+      // const 
+      return `<div class="skill">
+                  <i class="ico ${data.icon}"></i>
+                  <div class="description">
+                    <span class="">${data.name}</span>
+                    <div class="progress">
+                      <div class="progress-bar ${color}" style="width:100%"></div>
+                    </div>
+                    <span class="level">${data.level}</span>
+                  </div>
+              </div>`;
+    }
+    const skillset1 = $('#skills-set-col1');
+    const skillset2 = $('#skills-set-col2');
+    const skillset3 = $('#skills-set-col3');
+    skills.forEach(data => {
+      skillset1.append(template(data));
+      skillset2.append(template(data));
+      skillset3.append(template(data));
+    });
     </script>
     <!-- Plugin JavaScript -->
     <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
