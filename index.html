@@ -18,7 +18,8 @@
     <link href="vendor/simple-line-icons/css/simple-line-icons.css" rel="stylesheet">
     <!-- Custom CSS -->
     <link href="css/stylish-portfolio.css" rel="stylesheet">
-    <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
     <link href="css/animate.css" rel="stylesheet">
     <link rel="shortcut icon" href="img/andi-cirle.png">
     <style>
@@ -32,8 +33,37 @@
     <meta property="fb:app_id"             content="1602957756686873" />
 
     <style media="screen">
+      .workwev {
+        color: #fff;
+        text-decoration: underline;
+      }
       .contact input,.contact textarea,.contact button{
         margin-bottom: 10px;
+      }
+      .skill {
+        margin-bottom: 10px;
+        position: relative;
+      }
+      .skill .ico {
+        position: absolute;
+        font-size: 30px;
+        top: 6px;
+      }
+      .skill .description {
+        margin-left: 35px;
+      }
+      .skill .level{
+        float: right;
+        font-size: 12px;
+        margin-top: 6px;
+        color: rgba(255,255,255,0.4);
+      }
+      .skill .progress {
+        border-radius: 0;
+      }
+      .skill .progress .progress-bar {
+        background-color: #ECBA3F;
+        height: 10px;
       }
     </style>
   </head>
@@ -78,7 +108,7 @@
             <h1 class="mb-1">Hi, I'm Andy Nieves</h1>
             <p class="mb-5">
               <b>I love being critically involved on the high levels of projects, which, I think will keep my mind sharp, active and engaged.</b>
-              <br><a href="public/andinieves05-18-2018.pdf">Download Resume <i class="fa fa-download"></i></a>
+              <br><a target="new" href="downloads/resume03272019.pdf">Download Resume <i class="fa fa-download"></i></a>
             </p>
             <ul class="list-inline mb-5">
               <li class="list-inline-item">
@@ -103,13 +133,10 @@
               </li>
             </ul>
 
-            <a class="btn btn-primary btn-xl js-scroll-trigger" href="#about">Find Out More <i class="fa fa-chevron-down"></i></a>
+            <a class="btn btn-primary btn-xl js-scroll-trigger" href="#about">Find Out More <i class="fa fa-chevron-down"></i></a><br/>
+            <a class="js-scroll-trigger" href="#contact">Contact Me</a>
           </div>
         </div>
-        <!-- <center>
-
-        </center> -->
-
       </div>
       <div class="overlay"></div>
     </header>
@@ -137,17 +164,20 @@
                 <h2>WORK EXPERIENCE</h2>
 
                 <dl class="row">
-                  <dt class="col-sm-3"><span>Jul 2017 - Present</span></dt>
-                  <dd class="col-sm-9"><p><b class="primary-color">IT DIRECTOR / SENIOR PROGRAMMER</b><br>Mr. Geek Mobile Solutions Inc.<br>Unit 1703A, East Tower Tektite Building, Orgitas Center, Pasig City, 1605</p></dd>
+                  <dt class="col-sm-3"><span>August 2018 - Present</span></dt>
+                  <dd class="col-sm-9"><p><b class="primary-color">SENIOR REACT NATIVE DEVELOPER</b><br><a href="http://getdevs.com/" class="workwev">Get Devs Asia Inc.</a><br>9th Floor, BA Lepanto Building, Paseo de Roxas, Makati City Philippines</p></dd>
+                    
+                  <dt class="col-sm-3"><span>Jul 2017 - August 2018</span></dt>
+                  <dd class="col-sm-9"><p><b class="primary-color">IT DIRECTOR / SENIOR PROGRAMMER</b><br><a href="http://mrgeekmsi.com/" class="workwev">Mr. Geek Mobile Solutions Inc.</a><br>Unit 1703A, East Tower Tektite Building, Orgitas Center, Pasig City, 1605</p></dd>
 
                   <dt class="col-sm-3"><span>Dec 2016 - Jul 2017</span></dt>
-                  <dd class="col-sm-9"><p><b class="primary-color">PROJECT TEAM LEADER / WEB DEVELOPER</b><br>de' Kronos Advertising<br>Madewa, Brunei Darussalam</p></dd>
+                  <dd class="col-sm-9"><p><b class="primary-color">PROJECT TEAM LEADER / WEB DEVELOPER</b><br><a href="https://www.linkedin.com/company/de'kronos/about/" class="workwev">de' Kronos Advertising</a><br>Madewa, Brunei Darussalam</p></dd>
 
                   <dt class="col-sm-3"><span>Sep 2015 - Dec 2016</span></dt>
-                  <dd class="col-sm-9"><p><b class="primary-color">AIS COMPUTER PROGRAMMER</b><br>Xanatos Marine Ltd<br>Provincial Capitol Iba, Zambales 2201</p></dd>
+                  <dd class="col-sm-9"><p><b class="primary-color">AIS VESSEL COMPUTER PROGRAMMER</b><br><a href="https://www.xanatosmarine.com/" class="workwev">Xanatos Marine Ltd</a><br>Provincial Capitol Iba, Zambales 2201</p></dd>
 
                   <dt class="col-sm-3"><span>June 2009 - Sep 2015</span></dt>
-                  <dd class="col-sm-9"><p><b class="primary-color">INSTRUCTOR I / SENIOR DEVELOPER</b><br>Ramon Magsaysay Technological University<br>Iba Main Campus, Zambales 2201</p></dd>
+                  <dd class="col-sm-9"><p><b class="primary-color">INSTRUCTOR I / SENIOR DEVELOPER</b><br><a href="http://www.prmsu.edu.ph/" class="workwev">President Ramon Magsaysay State University</a><br>Iba Main Campus, Zambales 2201</p></dd>
 
                   <dt class="col-sm-3"><span>2008</span></dt>
                   <dd class="col-sm-9"><p><b class="primary-color">FREELANCE PROGRAMMER</b></p></dd>
@@ -156,20 +186,19 @@
 
               </div>
 
-              <!-- <a class="btn btn-dark btn-xl js-scroll-trigger" href="#services">What We Offer</a> -->
             </div>
             <div class="col-lg-6 mx-auto">
               <div class="about-me-col ed">
                 <h2>EDUCATION</h2>
                 <dl class="row">
                   <dt class="col-sm-3"><span>2013 - 2015</span></dt>
-                  <dd class="col-sm-9"><p><b class="primary-color">MASTER OF SCIENCE IN COMPUTER SCIENCE</b><br>Ramon Magsaysay Technological University<br>Iba Main Campus Zambales</p></dd>
+                  <dd class="col-sm-9"><p><b class="primary-color">MASTER OF SCIENCE IN COMPUTER SCIENCE</b><br>President Ramon Magsaysay State University<br>Iba Main Campus Zambales</p></dd>
 
                   <dt class="col-sm-3"><span>2013 - 2014</span></dt>
-                  <dd class="col-sm-9"><p><b class="primary-color">CERTIFICATE OF PROFESSIONAL EDUCATION</b><br>Ramon Magsaysay Technological University<br>Iba Main Campus Zambales</p></dd>
+                  <dd class="col-sm-9"><p><b class="primary-color">CERTIFICATE OF PROFESSIONAL EDUCATION</b><br>President Ramon Magsaysay State University<br>Iba Main Campus Zambales</p></dd>
 
                   <dt class="col-sm-3"><span>2005 - 2009</span></dt>
-                  <dd class="col-sm-9"><p><b class="primary-color">BACHELOR OF SCIENCE IN COMPUTER SCIENCE</b><br>* Best in Digital Arts<br>Ramon Magsaysay Technological University<br>Iba Main Campus Zambales</p></dd>
+                  <dd class="col-sm-9"><p><b class="primary-color">BACHELOR OF SCIENCE IN COMPUTER SCIENCE</b><br>* Best in Digital Arts<br>President Ramon Magsaysay State University<br>Iba Main Campus Zambales</p></dd>
 
                   <dt class="col-sm-3"><span>2001 - 2005</span></dt>
                   <dd class="col-sm-9"><p><b class="primary-color">ELECTRONICS</b><br>Zambales National High School<br>Iba Zambales</p></dd>
@@ -189,39 +218,35 @@
       </center>
 
     </section>
-    <!-- About -->
-    <!-- <section class="content-section bg-light" id="about">
-      <div class="container text-center">
-        <div class="row">
-          <div class="col-lg-10 mx-auto">
-            <h2>Education</h2>
-            <p class="lead mb-5">Coming soon!</p>
-            <a class="btn btn-dark btn-xl js-scroll-trigger" href="#services">What We Offer</a>
-          </div>
-        </div>
-      </div>
-    </section> -->
 
-    <!-- Services -->
     <section class="content-section bg-primary text-white " id="skills">
       <div class="container">
         <div class="content-section-heading">
           <h3 class="text-secondary mb-0"></h3>
           <h2 class="mb-5 text-center">Skills</h2>
         </div>
-        <h3 class="primary-color">TECHNOLOGIES</h3>
-        <p>Ruby-on-Rails, ReactJS, React-Native, Redux, Flutter, IONIC, Object Oriented Programming, MVC Cycle, PHP, Mysql, Xcode, Objective-c,
-          Android, iOS Application Development, Software Development, HTML5, CSS3, URL Rewriting, Javascript, AngularJS,
-          jQuery, AJAX, JSON, Java, HTML Pipelining, Database Management, Database Analytics, Advanced Distributed
-          Computing, .NET, ASP​, WPF Winforms,C#, BASIC​, XML, C. Handling External API (Facebook, Google, Payment
-          Processor etc)
-        </p>
 
+        <h3 class="primary-color">TECHNOLOGIES</h3>
+        <div class="row">
+          <div class="col-md-4">
+              <div id="skills-set-col1">
+              </div>
+          </div>
+          <div class="col-md-4">
+              <div id="skills-set-col2">
+              </div>
+          </div>
+          <div class="col-md-4">
+              <div id="skills-set-col3">
+              </div>
+          </div>
+        </div>
+        
         <h3 class="primary-color">INFRA</h3>
-        <p>AWS EC2, Heroku, Godaddy, Bluehost</p>
+        <p>AWS, Heroku, Godaddy, Bluehost</p>
 
         <h3 class="primary-color">PROJECT MANAGEMENT SOFTWARE</h3>
-        <p>Jira, Trello</p>
+        <p>Teamwork, Jira, Trello</p>
 
         <h3 class="primary-color">VERSION CONTROL</h3>
         <p>Git, Bitbucket</p>
@@ -250,7 +275,7 @@
   <h3 class="text-secondary mb-0"></h3>
   <h2 class="mb-5">Contact</h2>
 </div>
-        <div class="container contact">
+        <div id="contact" class="container contact">
           <form class="block mbr-form" action="https://formspree.io/andinieves151720@gmail.com" method="post">
               <div class="row">
                   <div class="col-md-6 multi-horizontal" data-for="name">
@@ -297,7 +322,7 @@
             </a>
           </li>
         </ul>
-        <p class="text-muted small mb-0">Copyright &copy; andi-nieves.github.io</p>
+        <p class="text-muted small mb-0">Online Resume andi-nieves.github.io</p>
       </div>
     </footer>
 
@@ -309,60 +334,13 @@
     <!-- Bootstrap core JavaScript -->
     <script src="vendor/jquery/jquery.min.js"></script>
     <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-    <script type="text/javascript">
-
-    $.fn.extend({
-      animateCss: function(animationName, callback) {
-        var animationEnd = (function(el) {
-          var animations = {
-            animation: 'animationend',
-            OAnimation: 'oAnimationEnd',
-            MozAnimation: 'mozAnimationEnd',
-            WebkitAnimation: 'webkitAnimationEnd',
-          };
-
-          for (var t in animations) {
-            if (el.style[t] !== undefined) {
-              return animations[t];
-            }
-          }
-        })(document.createElement('div'));
-
-        this.addClass('animated ' + animationName).one(animationEnd, function() {
-          //$(this).removeClass('animated ' + animationName);
-
-          if (typeof callback === 'function') callback();
-        });
-
-        return this;
-      },
-    });
-
-      var element_position = $('#about').offset().top;
-      $("#about .we").hide();
-      $("#about .ed").hide();
-      $(window).on('scroll', function() {
-        var y_scroll_pos = window.pageYOffset;
-        var scroll_pos_test = element_position;
-
-        if(y_scroll_pos > scroll_pos_test) {
-            //do stuff
-
-            if(!$("#about .we").hasClass("animate")){
-              $("#about .we").show();
-              $("#about .ed").show();
-              $("#about .we").animateCss("fadeInLeft");
-              $("#about .ed").animateCss("fadeInRight");
-            }
-
-        }
-      });
-    </script>
+    <script type="text/javascript" src="js/main.js"></script>
     <!-- Plugin JavaScript -->
     <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
 
     <!-- Custom scripts for this template -->
     <script src="js/stylish-portfolio.js"></script>
+    <script src="js/skills.js"></script>
 
   </body>
 
