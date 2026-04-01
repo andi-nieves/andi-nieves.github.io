@@ -403,3 +403,36 @@ img.mypic-circle {
 .primary-color{
   color: #ECBA3F;
 }
+
+.portfolio-card {
+  background-color: rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  border-radius: 6px;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  overflow: hidden;
+}
+.portfolio-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+}
+.portfolio-card .card-img-top-wrapper {
+  height: 140px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #fff;
+  padding: 1rem;
+}
+.portfolio-card .card-img-top {
+  max-height: 100px;
+  max-width: 100px;
+  object-fit: contain;
+}
+.portfolio-card .card-body {
+  color: #fff;
+  font-size: 14px;
+  padding: 10px;
+}
+.portfolio-card .card-title {
+  font-size: 1rem;
+}

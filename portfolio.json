@@ -1,0 +1,42 @@
+[
+    {
+        "project": "Gemini Crypto Currency & Wallet App",
+        "description": "Gemini is a registered full-reserve and highly-regulated cryptocurrency exchange and custodian",
+        "icon": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQWotrwUbC63JU6nqvbnZQnG99N9z3wHcPQng&s",
+        "links": {
+            "ios": "https://www.gemini.com/mobile",
+            "android": "https://www.gemini.com/mobile",
+            "web": "https://www.gemini.com/"
+        }
+    },
+    {
+        "project": "UnionBank Online App",
+        "description": "Banking app for UnionBank of the Philippines. Features include account management, fund transfers, bill payments, and mobile check deposits.",
+        "icon": "https://play.google.com/store/apps/details?id=com.unionbankph.online",
+        "links": {
+            "web": "https://www.unionbankonline.com/",
+            "android": "https://play.google.com/store/apps/details?id=com.unionbankonline.mobile&hl=en",
+            "ios": "https://apps.apple.com/no/app/unionbank-online/id1242291412"
+        }
+    },
+    {
+        "project": "Orange & Lemons App",
+        "description": "Orange & Lemons music & video streaming app built with React Native, Redux, and Firebase. Features include user authentication, personalized playlists, and real-time chat.",
+        "icon": "https://play-lh.googleusercontent.com/fWOgZJ1XpeOTR5khNbjLZh8gkL7uq4f7vkSXTm6Ut36AFBaVKPAWV6ZdKoRh5yhFHxwX=w480-h960-rw",
+        "links": {
+            "ios": "https://apps.apple.com/app/orange-lemons/id123456789",
+            "android": "https://play.google.com/store/apps/details?id=com.iperformapp.orangeandlemons&hl=en",
+            "web": "https://www.orangeandlemons.io/login"
+        }
+    },
+    {
+        "project": "MaxLife Music App",
+        "description": "Orange & Lemons music & video streaming app built with React Native, Redux, and Firebase. Features include user authentication, personalized playlists, and real-time chat.",
+        "icon": "https://play-lh.googleusercontent.com/hj5r4bUaO6myfdFgOOTZT6gMcQmzcu1FY7n5DebegkvWmCNBlo4dMmP4VNS4rjUlXwI=w480-h960-rw",
+        "links": {
+            "ios": "https://apps.apple.com/ph/app/maxlife-music/id6737564238",
+            "android": "https://play.google.com/store/apps/details?id=com.iperformapp.maxlifemusic",
+            "web": "https://maxlifemusic.com/login"
+        }
+    }
+]

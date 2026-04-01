@@ -1,347 +1,476 @@
 <!DOCTYPE html>
 <html lang="en">
 
-  <head>
+<head>
 
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="">
-    <meta name="author" content="">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
 
-    <title>Andy Nieves</title>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
-    <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
+  <title>Andy Nieves</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css"
+    integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+  <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js"
+    integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js"
+    integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb"
+    crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js"
+    integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn"
+    crossorigin="anonymous"></script>
 
-    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700,300italic,400italic,700italic" rel="stylesheet" type="text/css">
-    <link href="vendor/simple-line-icons/css/simple-line-icons.css" rel="stylesheet">
-    <!-- Custom CSS -->
-    <link href="css/stylish-portfolio.css" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
-    <link href="css/animate.css" rel="stylesheet">
-    <link rel="shortcut icon" href="img/andi-cirle.png">
-    <style>
-    
-    </style>
-    <meta property="og:url"                content="https://andi-nieves.github.io/" />
-    <meta property="og:type"               content="article" />
-    <meta property="og:title"              content="Andi's Online Resume" />
-    <meta property="og:description"        content="Computer Programmer with 9 years of total experience in Web, Windows, Mobile Applications Development. Proven skills in project development & management, data analyzing, problem solving, implementing innovative technologies. I love being critically involved on the high levels of projects, which, I think will keep my mind sharp, active and engaged." />
-    <meta property="og:image"              content="https://andi-nieves.github.io/img/fbimg.png" />
-    <meta property="fb:app_id"             content="1602957756686873" />
-    <script data-ad-client="ca-pub-6139247519326046" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-    <style media="screen">
-      .workwev {
-        color: #fff;
-        text-decoration: underline;
-      }
-      .contact input,.contact textarea,.contact button{
-        margin-bottom: 10px;
-      }
-      .skill {
-        margin-bottom: 10px;
-        position: relative;
-      }
-      .skill .ico {
-        position: absolute;
-        font-size: 30px;
-        top: 6px;
-      }
-      .skill .description {
-        margin-left: 35px;
-      }
-      .skill .level{
-        float: right;
-        font-size: 12px;
-        margin-top: 6px;
-        color: rgba(255,255,255,0.4);
-      }
-      .skill .progress {
-        border-radius: 0;
-      }
-      .skill .progress .progress-bar {
-        background-color: #ECBA3F;
-        height: 10px;
-      }
-    </style>
-  </head>
+  <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700,300italic,400italic,700italic"
+    rel="stylesheet" type="text/css">
+  <link href="vendor/simple-line-icons/css/simple-line-icons.css" rel="stylesheet">
+  <!-- Custom CSS -->
+  <link href="css/stylish-portfolio.css" rel="stylesheet">
+  <link rel="stylesheet"
+    href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+    integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+  <link href="css/animate.css" rel="stylesheet">
+  <link rel="shortcut icon" href="img/andi-cirle.png">
+  <style>
 
-  <body id="page-top">
-    <!-- Navigation -->
-    <a class="menu-toggle rounded" href="#">
-      <i class="fa fa-bars"></i>
-    </a>
-    <nav id="sidebar-wrapper">
-      <ul class="sidebar-nav">
-        <li class="sidebar-brand">
-          <a class="js-scroll-trigger" href="#page-top">Menus</a>
-        </li>
-        <li class="sidebar-nav-item">
-          <a class="js-scroll-trigger" href="#page-top">Home</a>
-        </li>
-        <li class="sidebar-nav-item">
-          <a class="js-scroll-trigger" href="#about">About</a>
-        </li>
-        <li class="sidebar-nav-item">
-          <a class="js-scroll-trigger" href="#skills">Skills</a>
-        </li>
-        <li class="sidebar-nav-item">
-          <a class="js-scroll-trigger" href="#portfolio">Portfolio</a>
-        </li>
-        <li class="sidebar-nav-item">
-          <a class="js-scroll-trigger" href="#contact">Contact</a>
-        </li>
-      </ul>
-    </nav>
+  </style>
+  <meta property="og:url" content="https://andi-nieves.github.io/" />
+  <meta property="og:type" content="article" />
+  <meta property="og:title" content="Andi's Online Resume" />
+  <meta property="og:description"
+    content="Computer Programmer with 9 years of total experience in Web, Windows, Mobile Applications Development. Proven skills in project development & management, data analyzing, problem solving, implementing innovative technologies. I love being critically involved on the high levels of projects, which, I think will keep my mind sharp, active and engaged." />
+  <meta property="og:image" content="https://andi-nieves.github.io/img/fbimg.png" />
+  <meta property="fb:app_id" content="1602957756686873" />
+  <script data-ad-client="ca-pub-6139247519326046" async
+    src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+  <style media="screen">
+    .workwev {
+      color: #fff;
+      text-decoration: underline;
+    }
 
-    <!-- Header -->
-    <header class="masthead d-flex">
-      <div class="container my-auto">
-        <div class="row">
-          <div class="col-lg-6 text-center">
-            <img src="img/andi.png" class="mypic hidden-md-down" alt="Andy">
-            <img src="img/andi-cirle.png" class="mypic-circle hidden-lg-up" alt="Andy">
-          </div>
-          <div class="col text-center animated fadeInRight">
-            <h1 class="mb-1">Hi, I'm Andy Nieves</h1>
-            <p class="mb-5">
-              <b>I love being critically involved on the high levels of projects, which, I think will keep my mind sharp, active and engaged.</b>
-              <br><a target="new" href="downloads/resume03272019.pdf">Download Resume <i class="fa fa-download"></i></a>
-            </p>
-            <ul class="list-inline mb-5">
-              <li class="list-inline-item">
-                <a class="social-link rounded-circle text-white" href="https://www.facebook.com/andi.sevein">
-                  <i class="icon-social-facebook"></i>
-                </a>
-              </li>
-              <li class="list-inline-item">
-                <a class="social-link rounded-circle text-white" href="https://twitter.com/andi_nieves15">
-                  <i class="icon-social-twitter"></i>
-                </a>
-              </li>
-              <li class="list-inline-item">
-                <a class="social-link rounded-circle text-white" href="https://github.com/andi-nieves">
-                  <i class="icon-social-github"></i>
-                </a>
-              </li>
-              <li class="list-inline-item">
-                <a class="social-link rounded-circle text-white" href="https://www.linkedin.com/in/andynieves/">
-                  <i class="icon-social-linkedin"></i>
-                </a>
-              </li>
-            </ul>
+    .contact input,
+    .contact textarea,
+    .contact button {
+      margin-bottom: 10px;
+    }
 
-            <a class="btn btn-primary btn-xl js-scroll-trigger" href="#about">Find Out More <i class="fa fa-chevron-down"></i></a><br/>
-            <a class="js-scroll-trigger" href="#contact">Contact Me</a>
+    .skill {
+      margin-bottom: 10px;
+      position: relative;
+    }
+
+    .skill .ico {
+      position: absolute;
+      font-size: 30px;
+      top: 6px;
+    }
+
+    .skill .description {
+      margin-left: 35px;
+    }
+
+    .skill .level {
+      float: right;
+      font-size: 12px;
+      margin-top: 6px;
+      color: rgba(255, 255, 255, 0.4);
+    }
+
+    .skill .progress {
+      border-radius: 0;
+    }
+
+    .skill .progress .progress-bar {
+      background-color: #ECBA3F;
+      height: 10px;
+    }
+  </style>
+</head>
+
+<body id="page-top">
+  <!-- Navigation -->
+  <a class="menu-toggle rounded" href="#">
+    <i class="fa fa-bars"></i>
+  </a>
+  <nav id="sidebar-wrapper">
+    <ul class="sidebar-nav">
+      <li class="sidebar-brand">
+        <a class="js-scroll-trigger" href="#page-top">Menus</a>
+      </li>
+      <li class="sidebar-nav-item">
+        <a class="js-scroll-trigger" href="#page-top">Home</a>
+      </li>
+      <li class="sidebar-nav-item">
+        <a class="js-scroll-trigger" href="#about">About</a>
+      </li>
+      <li class="sidebar-nav-item">
+        <a class="js-scroll-trigger" href="#skills">Skills</a>
+      </li>
+      <li class="sidebar-nav-item">
+        <a class="js-scroll-trigger" href="#portfolio">Portfolio</a>
+      </li>
+      <li class="sidebar-nav-item">
+        <a class="js-scroll-trigger" href="#contact">Contact</a>
+      </li>
+    </ul>
+  </nav>
+
+  <!-- Header -->
+  <header class="masthead d-flex">
+    <div class="container my-auto">
+      <div class="row">
+        <div class="col-lg-6 text-center">
+          <img src="img/andi.png" class="mypic hidden-md-down" alt="Andy">
+          <img src="img/andi-cirle.png" class="mypic-circle hidden-lg-up" alt="Andy">
+        </div>
+        <div class="col text-center animated fadeInRight">
+          <h1 class="mb-1">Hi, I'm Andy Nieves</h1>
+          <p class="mb-5">
+            <b>I love being critically involved on the high levels of projects, which, I think will keep my mind sharp,
+              active and engaged.</b>
+            <br><a target="new" href="downloads/resume2025.pdf">Download Resume <i class="fa fa-download"></i></a>
+          </p>
+          <ul class="list-inline mb-5">
+            <li class="list-inline-item">
+              <a class="social-link rounded-circle text-white" href="https://www.facebook.com/andi.sevein">
+                <i class="icon-social-facebook"></i>
+              </a>
+            </li>
+            <li class="list-inline-item">
+              <a class="social-link rounded-circle text-white" href="https://twitter.com/andi_nieves15">
+                <i class="icon-social-twitter"></i>
+              </a>
+            </li>
+            <li class="list-inline-item">
+              <a class="social-link rounded-circle text-white" href="https://github.com/andi-nieves">
+                <i class="icon-social-github"></i>
+              </a>
+            </li>
+            <li class="list-inline-item">
+              <a class="social-link rounded-circle text-white" href="https://www.linkedin.com/in/andynieves/">
+                <i class="icon-social-linkedin"></i>
+              </a>
+            </li>
+          </ul>
+
+          <a class="btn btn-primary btn-xl js-scroll-trigger" href="#about">Find Out More <i
+              class="fa fa-chevron-down"></i></a><br />
+          <a class="js-scroll-trigger" href="#contact">Contact Me</a>
+        </div>
+      </div>
+    </div>
+    <div class="overlay"></div>
+  </header>
+
+  <section class="content-section bg-dark" id="about">
+    <div class="container">
+      <div class="row text-center">
+        <div class="col">
+          <div class="content-section-heading">
+            <h3 class="text-secondary mb-0"></h3>
+            <h2 class="mb-5">Portfolio</h2>
           </div>
         </div>
       </div>
-      <div class="overlay"></div>
-    </header>
-
-    <section class="content-section bg-dark" id="about">
+    </div>
+    <div class="row portfolio">
       <div class="container">
-        <div class="row text-center">
-          <div class="col">
-            <div class="content-section-heading">
-              <h3 class="text-secondary mb-0"></h3>
-              <h2 class="mb-5">About Me</h2>
-              <p><b class="primary-color">Computer Programmer</b> with 9 years of total experience in Web, Windows, Mobile Applications Development. Proven skills in project development & management, data analyzing, problem solving, implementing innovative technologies. <br><br></p>
-            </div>
+        <div class="row" id="portfolio-cards"></div>
+      </div>
+    </div>
+
+    <script>
+      (function () {
+        var projects = [
+          {
+            "project": "Gemini Crypto Currency & Wallet App",
+            "description": "Gemini is a registered full-reserve and highly-regulated cryptocurrency exchange and custodian",
+            "icon": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQWotrwUbC63JU6nqvbnZQnG99N9z3wHcPQng&s",
+            "links": { "ios": "https://www.gemini.com/mobile", "android": "https://www.gemini.com/mobile", "web": "https://www.gemini.com/" }
+          },
+          {
+            "project": "UnionBank Online App",
+            "description": "Banking app for UnionBank of the Philippines. Features include account management, fund transfers, bill payments, and mobile check deposits.",
+            "icon": "https://play-lh.googleusercontent.com/xeCakfcf3dDyUovyFd7CiAL_5LoS6W7n83f7jo4GqwFZBjhPR9MO9HuUgttmYPnOe7A=w480-h960-rw",
+            "links": { "web": "https://www.unionbankonline.com/", "android": "https://play.google.com/store/apps/details?id=com.unionbankonline.mobile&hl=en", "ios": "https://apps.apple.com/no/app/unionbank-online/id1242291412" }
+          },
+          {
+            "project": "Orange & Lemons App",
+            "description": "Orange & Lemons music & video streaming app built with React Native, Redux, and Firebase.",
+            "icon": "https://play-lh.googleusercontent.com/fWOgZJ1XpeOTR5khNbjLZh8gkL7uq4f7vkSXTm6Ut36AFBaVKPAWV6ZdKoRh5yhFHxwX=w480-h960-rw",
+            "links": { "ios": "https://apps.apple.com/app/orange-lemons/id123456789", "android": "https://play.google.com/store/apps/details?id=com.iperformapp.orangeandlemons&hl=en", "web": "https://www.orangeandlemons.io/login" }
+          },
+          {
+            "project": "MaxLife Music App",
+            "description": "MaxLife music & video streaming app built with React Native, Redux, and Firebase.",
+            "icon": "https://play-lh.googleusercontent.com/hj5r4bUaO6myfdFgOOTZT6gMcQmzcu1FY7n5DebegkvWmCNBlo4dMmP4VNS4rjUlXwI=w480-h960-rw",
+            "links": { "ios": "https://apps.apple.com/ph/app/maxlife-music/id6737564238", "android": "https://play.google.com/store/apps/details?id=com.iperformapp.maxlifemusic", "web": "https://maxlifemusic.com/login" }
+          }
+        ];
+
+        var container = document.getElementById('portfolio-cards');
+        projects.forEach(function (p) {
+          var links = '';
+          if (p.links.ios) links += '<a href="' + p.links.ios + '" class="btn btn-sm btn-primary mr-1" target="_blank">iOS</a>';
+          if (p.links.android) links += '<a href="' + p.links.android + '" class="btn btn-sm btn-primary mr-1" target="_blank">Android</a>';
+          if (p.links.web) links += '<a href="' + p.links.web + '" class="btn btn-sm btn-secondary" target="_blank">Web</a>';
+
+          var card = document.createElement('div');
+          card.className = 'col-lg-3 col-md-6 mb-4';
+          card.innerHTML =
+            '<div class="card portfolio-card h-100">' +
+              '<div class="card-img-top-wrapper">' +
+                '<img class="card-img-top" src="' + p.icon + '" alt="' + p.project + '">' +
+              '</div>' +
+              '<div class="card-body d-flex flex-column">' +
+                '<h5 class="card-title primary-color">' + p.project + '</h5>' +
+                '<p class="card-text">' + p.description + '</p>' +
+                '<div class="mt-auto">' + links + '</div>' +
+              '</div>' +
+            '</div>';
+          container.appendChild(card);
+        });
+      })();
+    </script>
+    <center>
+      <br><br>
+      <a class="btn btn-primary btn-xl js-scroll-trigger" href="#about-me">About Me <i
+          class="fa fa-chevron-down"></i></a>
+    </center>
+  </section>
+
+  <section class="content-section bg-dark" id="about">
+    <div class="container">
+      <div class="row text-center">
+        <div class="col">
+          <div class="content-section-heading">
+            <h3 class="text-secondary mb-0"></h3>
+            <h2 class="mb-5">About Me</h2>
+            <p><b class="primary-color">Computer Programmer</b> with 9 years of total experience in Web, Windows, Mobile
+              Applications Development. Proven skills in project development & management, data analyzing, problem
+              solving, implementing innovative technologies. <br><br></p>
           </div>
+        </div>
       </div>
 
 
-      </div>
-      <div class="row about-me">
-        <div class="container text-center">
+    </div>
+    <div id="about-me" class="row about-me">
+      <div class="container text-center">
+        <div class="row text-left">
+          <div class="col-lg-6 mx-auto ">
+            <div class="about-me-col we">
+              <h2>WORK EXPERIENCE</h2>
 
-          <div class="row text-left">
-            <div class="col-lg-6 mx-auto ">
-              <div class="about-me-col we">
-                <h2>WORK EXPERIENCE</h2>
+              <dl class="row">
+                <dt class="col-sm-3"><span>August 2025 - Present</span></dt>
+                <dd class="col-sm-9">
+                  <p><b class="primary-color">SENIOR FULLSTACK REACT NATIVE DEVELOPER</b><br><a
+                      href="http://leadly.co.uk" class="workwev">Leadly UK.</a><br>Manchester Club. Brown St, Manchester
+                    , M2 1DH</p>
+                </dd>
 
-                <dl class="row">
-                  <dt class="col-sm-3"><span>August 2018 - Present</span></dt>
-                  <dd class="col-sm-9"><p><b class="primary-color">SENIOR REACT NATIVE DEVELOPER</b><br><a href="http://getdevs.com/" class="workwev">Get Devs Asia Inc.</a><br>9th Floor, BA Lepanto Building, Paseo de Roxas, Makati City Philippines</p></dd>
-                    
-                  <dt class="col-sm-3"><span>Jul 2017 - August 2018</span></dt>
-                  <dd class="col-sm-9"><p><b class="primary-color">IT DIRECTOR / SENIOR PROGRAMMER</b><br><a href="http://mrgeekmsi.com/" class="workwev">Mr. Geek Mobile Solutions Inc.</a><br>Unit 1703A, East Tower Tektite Building, Orgitas Center, Pasig City, 1605</p></dd>
+                <dt class="col-sm-3"><span>September 2024 - August 2025</span></dt>
+                <dd class="col-sm-9">
+                  <p><b class="primary-color">SENIOR FULLSTACK REACT NATIVE DEVELOPER</b><br><a
+                      href="https://lionsandlegacy.com/" class="workwev">Lions & Legacy</a><br>Unit 25, Cityflex Tower,
+                    Lane T, Bonifacio Global City, Metro Manila</p>
+                </dd>
 
-                  <dt class="col-sm-3"><span>Dec 2016 - Jul 2017</span></dt>
-                  <dd class="col-sm-9"><p><b class="primary-color">PROJECT TEAM LEADER / WEB DEVELOPER</b><br><a href="https://www.linkedin.com/company/de'kronos/about/" class="workwev">de' Kronos Advertising</a><br>Madewa, Brunei Darussalam</p></dd>
+                <dt class="col-sm-3"><span>Jan 2024 - Sep 2024</span></dt>
+                <dd class="col-sm-9">
+                  <p><b class="primary-color">REACT-NATIVE DEVELOPER</b><br><a href="https://www.jetpacklabs.com/"
+                      class="workwev">Jetpack Labs</a><br>22852 Foreman Dr, Maple Ridge, BC V4R 0B2, Canada</p>
+                </dd>
 
-                  <dt class="col-sm-3"><span>Sep 2015 - Dec 2016</span></dt>
-                  <dd class="col-sm-9"><p><b class="primary-color">AIS VESSEL COMPUTER PROGRAMMER</b><br><a href="https://www.xanatosmarine.com/" class="workwev">Xanatos Marine Ltd</a><br>Provincial Capitol Iba, Zambales 2201</p></dd>
+                <dt class="col-sm-3"><span>Aug 2020 - Dec 2023</span></dt>
+                <dd class="col-sm-9">
+                  <p><b class="primary-color">REACT-NATIVE DEVELOPER</b><br><a
+                      href="https://www.unionbankph.com/unionbankonline" class="workwev">Union Bank of the
+                      Philippines</a><br>Ortigas Center, Mandaluyong City</p>
+                </dd>
 
-                  <dt class="col-sm-3"><span>June 2009 - Sep 2015</span></dt>
-                  <dd class="col-sm-9"><p><b class="primary-color">INSTRUCTOR I / SENIOR DEVELOPER</b><br><a href="http://www.prmsu.edu.ph/" class="workwev">President Ramon Magsaysay State University</a><br>Iba Main Campus, Zambales 2201</p></dd>
-
-                  <dt class="col-sm-3"><span>2008</span></dt>
-                  <dd class="col-sm-9"><p><b class="primary-color">FREELANCE PROGRAMMER</b></p></dd>
-
-                </dl>
-
-              </div>
-
+                <dt class="col-sm-3"><span>Aug 2018 - Dec 2019</span></dt>
+                <dd class="col-sm-9">
+                  <p><b class="primary-color">REACT-NATIVE DEVELOPER</b><br><a href="https://getdevs.com/"
+                      class="workwev">Get Devs Asia</a><br>Lepanto Building, Makati City, Metro Manila</p>
+                </dd>
+              </dl>
             </div>
-            <div class="col-lg-6 mx-auto">
-              <div class="about-me-col ed">
-                <h2>EDUCATION</h2>
-                <dl class="row">
-                  <dt class="col-sm-3"><span>2013 - 2015</span></dt>
-                  <dd class="col-sm-9"><p><b class="primary-color">MASTER OF SCIENCE IN COMPUTER SCIENCE</b><br>President Ramon Magsaysay State University<br>Iba Main Campus Zambales</p></dd>
 
-                  <dt class="col-sm-3"><span>2013 - 2014</span></dt>
-                  <dd class="col-sm-9"><p><b class="primary-color">CERTIFICATE OF PROFESSIONAL EDUCATION</b><br>President Ramon Magsaysay State University<br>Iba Main Campus Zambales</p></dd>
+          </div>
+          <div class="col-lg-6 mx-auto">
+            <div class="about-me-col ed">
+              <h2>EDUCATION</h2>
+              <dl class="row">
+                <dt class="col-sm-3"><span>2013 - 2015</span></dt>
+                <dd class="col-sm-9">
+                  <p><b class="primary-color">MASTER OF SCIENCE IN COMPUTER SCIENCE</b><br>President Ramon Magsaysay
+                    State University<br>Iba Main Campus Zambales</p>
+                </dd>
 
-                  <dt class="col-sm-3"><span>2005 - 2009</span></dt>
-                  <dd class="col-sm-9"><p><b class="primary-color">BACHELOR OF SCIENCE IN COMPUTER SCIENCE</b><br>* Best in Digital Arts<br>President Ramon Magsaysay State University<br>Iba Main Campus Zambales</p></dd>
+                <dt class="col-sm-3"><span>2013 - 2014</span></dt>
+                <dd class="col-sm-9">
+                  <p><b class="primary-color">CERTIFICATE OF PROFESSIONAL EDUCATION</b><br>President Ramon Magsaysay
+                    State University<br>Iba Main Campus Zambales</p>
+                </dd>
 
-                  <dt class="col-sm-3"><span>2001 - 2005</span></dt>
-                  <dd class="col-sm-9"><p><b class="primary-color">ELECTRONICS</b><br>Zambales National High School<br>Iba Zambales</p></dd>
+                <dt class="col-sm-3"><span>2005 - 2009</span></dt>
+                <dd class="col-sm-9">
+                  <p><b class="primary-color">BACHELOR OF SCIENCE IN COMPUTER SCIENCE</b><br>* Best in Digital
+                    Arts<br>President Ramon Magsaysay State University<br>Iba Main Campus Zambales</p>
+                </dd>
+
+                <dt class="col-sm-3"><span>2001 - 2005</span></dt>
+                <dd class="col-sm-9">
+                  <p><b class="primary-color">ELECTRONICS</b><br>Zambales National High School<br>Iba Zambales</p>
+                </dd>
 
 
-                </dl>
+              </dl>
 
-              </div>
             </div>
           </div>
         </div>
-
       </div>
-      <center>
-        <br><br>
-        <a class="btn btn-primary btn-xl js-scroll-trigger" href="#skills">My Skills? <i class="fa fa-chevron-down"></i></a>
-      </center>
 
-    </section>
+    </div>
+    <center>
+      <br><br>
+      <a class="btn btn-primary btn-xl js-scroll-trigger" href="#skills">My Skills? <i
+          class="fa fa-chevron-down"></i></a>
+    </center>
+  </section>
 
-    <section class="content-section bg-primary text-white " id="skills">
-      <div class="container">
-        <div class="content-section-heading">
-          <h3 class="text-secondary mb-0"></h3>
-          <h2 class="mb-5 text-center">Skills</h2>
-        </div>
+  <section class="content-section bg-primary text-white " id="skills">
+    <div class="container">
+      <div class="content-section-heading">
+        <h3 class="text-secondary mb-0"></h3>
+        <h2 class="mb-5 text-center">Skills</h2>
+      </div>
 
-        <h3 class="primary-color">TECHNOLOGIES (27)</h3>
-        <div class="row">
-          <div class="col-md-4">
-              <div id="skills-set-col1">
-              </div>
-          </div>
-          <div class="col-md-4">
-              <div id="skills-set-col2">
-              </div>
-          </div>
-          <div class="col-md-4">
-              <div id="skills-set-col3">
-              </div>
+      <h3 class="primary-color">TECHNOLOGIES (27)</h3>
+      <div class="row">
+        <div class="col-md-4">
+          <div id="skills-set-col1">
           </div>
         </div>
-        
-        <h3 class="primary-color">INFRA</h3>
-        <p>AWS, Heroku, Godaddy, Bluehost</p>
-
-        <h3 class="primary-color">PROJECT MANAGEMENT SOFTWARE</h3>
-        <p>Teamwork, Jira, Trello</p>
-
-        <h3 class="primary-color">VERSION CONTROL</h3>
-        <p>Git, Bitbucket</p>
-
-        <h3 class="primary-color">DATABASE</h3>
-        <p>Postgres, MongoDB, Mysql, SQLServer, Data Analytics, Data Crunching, Reports Generation, CRON Jobs.</p>
-
-        <h3 class="primary-color">ADVANCED COMPUTER NETWORKING</h3>
-        <p>WAN, LAN, Cabling, Port Forwarding/Mapping, MAC, IP, URL Filtering, Troubleshooting</p>
-
-        <h3 class="primary-color">CONTENT MANAGEMENT SYSTEM</h3>
-        <p>Wordpress, Joomla, Muse.</p>
+        <div class="col-md-4">
+          <div id="skills-set-col2">
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div id="skills-set-col3">
+          </div>
+        </div>
       </div>
-    </section>
 
-    <!-- Footer -->
-<footer class="footer text-center" id="contact">
-      <!--<div class="container">
+      <h3 class="primary-color">INFRA</h3>
+      <p>AWS, Heroku, Godaddy, Bluehost</p>
+
+      <h3 class="primary-color">PROJECT MANAGEMENT SOFTWARE</h3>
+      <p>Teamwork, Jira, Trello</p>
+
+      <h3 class="primary-color">VERSION CONTROL</h3>
+      <p>Git, Bitbucket</p>
+
+      <h3 class="primary-color">DATABASE</h3>
+      <p>Postgres, MongoDB, Mysql, SQLServer, Data Analytics, Data Crunching, Reports Generation, CRON Jobs.</p>
+
+      <h3 class="primary-color">ADVANCED COMPUTER NETWORKING</h3>
+      <p>WAN, LAN, Cabling, Port Forwarding/Mapping, MAC, IP, URL Filtering, Troubleshooting</p>
+
+      <h3 class="primary-color">CONTENT MANAGEMENT SYSTEM</h3>
+      <p>Wordpress, Joomla, Muse.</p>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer text-center" id="contact">
+    <!--<div class="container">
         <form action="https://formspree.io/andinieves151720@gmail.com"
       method="POST">
     <input type="text" name="name">
     <input type="email" name="_replyto">
     <input type="submit" value="Send">
 </form> -->
-<div class="content-section-heading">
-  <h3 class="text-secondary mb-0"></h3>
-  <h2 class="mb-5">Contact</h2>
-</div>
-        <div id="contact" class="container contact">
-          <form class="block mbr-form" action="https://formspree.io/andinieves151720@gmail.com" method="post">
-              <div class="row">
-                  <div class="col-md-6 multi-horizontal" data-for="name">
-                      <input type="text" class="form-control input" name="name" data-form-field="Name" placeholder="Your Name" required="" id="name-form4-2y">
-                  </div>
-                  <div class="col-md-6 multi-horizontal" data-for="phone">
-                      <input type="text" class="form-control input" name="phone" data-form-field="Phone" placeholder="Phone" required="" id="phone-form4-2y">
-                  </div>
-                  <div class="col-md-12" data-for="email">
-                      <input type="text" class="form-control input" name="email" data-form-field="Email" placeholder="Email" required="" id="email-form4-2y">
-                  </div>
-                  <div class="col-md-12" data-for="message">
-                      <textarea class="form-control input" name="message" rows="3" data-form-field="Message" placeholder="Message" style="resize:none" id="message-form4-2y"></textarea>
-                  </div>
-                  <div class="input-group-btn col-md-12" style="margin-top: 10px;">
-                      <button href="" type="submit" class="btn btn-primary btn-form display-4">SEND MESSAGE</button>
-                  </div>
-              </div>
-          </form>
+    <div class="content-section-heading">
+      <h3 class="text-secondary mb-0"></h3>
+      <h2 class="mb-5">Contact</h2>
+    </div>
+    <div id="contact" class="container contact">
+      <form class="block mbr-form" action="https://formspree.io/andinieves151720@gmail.com" method="post">
+        <div class="row">
+          <div class="col-md-6 multi-horizontal" data-for="name">
+            <input type="text" class="form-control input" name="name" data-form-field="Name" placeholder="Your Name"
+              required="" id="name-form4-2y">
+          </div>
+          <div class="col-md-6 multi-horizontal" data-for="phone">
+            <input type="text" class="form-control input" name="phone" data-form-field="Phone" placeholder="Phone"
+              required="" id="phone-form4-2y">
+          </div>
+          <div class="col-md-12" data-for="email">
+            <input type="text" class="form-control input" name="email" data-form-field="Email" placeholder="Email"
+              required="" id="email-form4-2y">
+          </div>
+          <div class="col-md-12" data-for="message">
+            <textarea class="form-control input" name="message" rows="3" data-form-field="Message" placeholder="Message"
+              style="resize:none" id="message-form4-2y"></textarea>
+          </div>
+          <div class="input-group-btn col-md-12" style="margin-top: 10px;">
+            <button href="" type="submit" class="btn btn-primary btn-form display-4">SEND MESSAGE</button>
+          </div>
         </div>
+      </form>
+    </div>
 
-        <ul class="list-inline mb-5">
-          <li class="list-inline-item">
-            <a class="social-link rounded-circle text-white" href="https://www.facebook.com/andi.sevein">
-              <i class="icon-social-facebook"></i>
-            </a>
-          </li>
+    <ul class="list-inline mb-5">
+      <li class="list-inline-item">
+        <a class="social-link rounded-circle text-white" href="https://www.facebook.com/andi.sevein">
+          <i class="icon-social-facebook"></i>
+        </a>
+      </li>
 
-          <li class="list-inline-item">
-            <a class="social-link rounded-circle text-white" href="https://twitter.com/andi_nieves15">
-              <i class="icon-social-twitter"></i>
-            </a>
-          </li>
+      <li class="list-inline-item">
+        <a class="social-link rounded-circle text-white" href="https://twitter.com/andi_nieves15">
+          <i class="icon-social-twitter"></i>
+        </a>
+      </li>
 
-          <li class="list-inline-item">
-            <a class="social-link rounded-circle text-white" href="https://github.com/andi-nieves">
-              <i class="icon-social-github"></i>
-            </a>
-          </li>
+      <li class="list-inline-item">
+        <a class="social-link rounded-circle text-white" href="https://github.com/andi-nieves">
+          <i class="icon-social-github"></i>
+        </a>
+      </li>
 
-          <li class="list-inline-item">
-            <a class="social-link rounded-circle text-white" href="https://www.linkedin.com/in/andynieves/">
-              <i class="icon-social-linkedin"></i>
-            </a>
-          </li>
-        </ul>
-        <p class="text-muted small mb-0">Online Resume andi-nieves.github.io</p>
-      </div>
-    </footer>
+      <li class="list-inline-item">
+        <a class="social-link rounded-circle text-white" href="https://www.linkedin.com/in/andynieves/">
+          <i class="icon-social-linkedin"></i>
+        </a>
+      </li>
+    </ul>
+    <p class="text-muted small mb-0">Online Resume andi-nieves.github.io</p>
+    </div>
+  </footer>
 
-    <!-- Scroll to Top Button-->
-    <a class="scroll-to-top rounded js-scroll-trigger" href="#page-top">
-      <i class="fa fa-angle-up"></i>
-    </a>
+  <!-- Scroll to Top Button-->
+  <a class="scroll-to-top rounded js-scroll-trigger" href="#page-top">
+    <i class="fa fa-angle-up"></i>
+  </a>
 
-    <!-- Bootstrap core JavaScript -->
-    <script src="vendor/jquery/jquery.min.js"></script>
-    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-    <script type="text/javascript" src="js/main.js"></script>
-    <!-- Plugin JavaScript -->
-    <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+  <!-- Bootstrap core JavaScript -->
+  <script src="vendor/jquery/jquery.min.js"></script>
+  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script type="text/javascript" src="js/main.js"></script>
+  <!-- Plugin JavaScript -->
+  <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
 
-    <!-- Custom scripts for this template -->
-    <script src="js/stylish-portfolio.js"></script>
-    <script src="js/skills.js"></script>
+  <!-- Custom scripts for this template -->
+  <script src="js/stylish-portfolio.js"></script>
+  <script src="js/skills.js"></script>
 
-  </body>
+</body>
 
 </html>
